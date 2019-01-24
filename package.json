@@ -1,0 +1,41 @@
+{
+  "name": "orbit-signalr",
+  "version": "0.0.1",
+  "description": "SignalR { json:api } adapter for Orbit.js",
+  "keywords": [
+    "orbit",
+    "orbit.js",
+    "JSON:API",
+    "JSONAPI",
+    "API",
+    "REST",
+    "dotnet",
+    ".net",
+    "asp.net",
+    "signalr",
+    "websockets"
+  ],
+  "main": "dist/commonjs/es5/index.js",
+  "module": "dist/modules/es5/index.js",
+  "types": "dist/types/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && BROCCOLI_ENV=dist broccoli build dist",
+    "build:tests": "rm -rf tests && BROCCOLI_ENV=tests broccoli build tests",
+    "release": "yarn build && yarn publish",
+    "test": "testem ci"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "broccoli": "^2.0.1",
+    "eslint": "^5.12.1",
+    "testem": "^2.14.0",
+    "typescript": "^3.2.4"
+  },
+  "peerDependencies": {
+    "@aspnet/signalr": "^1.1.0",
+    "@orbit/data": "^0.15.23",
+    "@orbit/jsonapi": "^0.15.25",
+    "@orbit/utils": "^0.15.23"
+  }
+}
