@@ -25,7 +25,9 @@
     "release": "yarn build && yarn publish",
     "test": "testem ci"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@ssv/signalr-client": "^1.0.0"
+  },
   "devDependencies": {
     "broccoli": "^2.0.1",
     "eslint": "^5.12.1",
